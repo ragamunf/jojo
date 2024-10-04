@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 name = input('Ваши фамилия, имя? ')
 age = input('Сколько вам лет? ')
 place = input('Где вы живете? ')
