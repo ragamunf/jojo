@@ -1,11 +1,15 @@
 # -- coding: utf-8 --
 
-count = -1
-x = int(input())
-y = 0
-while x != 0:
-    if x > y:
-        count += 1
-    y = x
+#Последовательность состоит из натуральных чисел и завершается числом 0. Определите, сколько элементов этой последовательности больше предыдущего элемента
+
+def b():
+    count = -1
     x = int(input())
-print(count)
+    y = 0
+    while x != 0:
+        if x > y:
+            count += 1
+        y = x
+        x = int(input())
+    return count
+print(b())
