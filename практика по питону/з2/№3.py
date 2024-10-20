@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 from math import *
 
 x = 3.74*10**(-2)
