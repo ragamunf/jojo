@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 def main(a, b):
     a, b = b, a
     return a, b
