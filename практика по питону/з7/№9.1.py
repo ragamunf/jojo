@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 def l():
     n = int(input('Введите длину массива: '))
     s = [float(input(f'Введите элемент {x}: ')) for x in range(n)]
