@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 def f(n):
     global count
     if n!=0:
