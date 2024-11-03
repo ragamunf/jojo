@@ -1,3 +1,5 @@
+# -- coding: utf-8 --
+
 def f(x):
     total = 1
     for i in x: total*= i
