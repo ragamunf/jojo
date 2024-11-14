@@ -16,7 +16,6 @@ def matrix():
     return d
 
 res = matrix()
-
 print(f'Количество искомых элементов: {len(res)}')
 print(f'Максимальный из них: {max(res)}')
             
