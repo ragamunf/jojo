@@ -2,7 +2,7 @@
 
 def matrix():
     k = int(input(f'Введите число k: '))
-    n = int(input('Введите число строк: '))
+    n = int(input('Введите порядок матрицы: '))
     a = []
     for i in range(n):
         b = []
