@@ -1,7 +1,7 @@
 # -- coding: utf-8 --
 
 def matrix():
-    k = int(input(f'Введите число k: '))
+    k = int(input('Введите число k: '))
     n = int(input('Введите порядок матрицы: '))
     a = []
     for i in range(n):
