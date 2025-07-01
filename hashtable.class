@@ -1,0 +1,62 @@
+package hashtable;
+
+public class HashTable implements Table {  // имплементс - класса хт реализует интерфейс тейбл, т.е. должен выполнить все его методы
+    static class HashNode {  // создаем связанный список
+        String key, value;
+        HashNode linkForNext; // ссылка на следующий элемент в цепочке в случае коллизии
+
+        HashNode(String key, String value) {  // создаем элемент таблицы
+            this.key = key;
+            this.value = value;
+            //linkForNext = null;
+        }
+    }
+
+    static HashNode[] bucket = new  HashNode[16];  // создаем массив бакет
+    static int size;  // counter
+    static final double LOAD_K = 0.75;
+
+    HashTable() {  // конструктор нужен, чтобы потом можно было создать массив с другим размером
+        bucket = new HashNode[16];
+    }
+
+    static int hash(String key) {  // преобразует ключ в индекс(хэш)
+        return Math.abs(key.hashCode()) % bucket.length; // метод hashCode() — это часть класса String (и вообще любого Object) в Java, который возвращает целочисленный хэш
+    }
+
+    /*
+    static int getHash(String key) {
+        int hash = 0;
+        int n = key.length();
+        for(int i=0; i < n; i++) {SS
+            hash += key.charAt[i] * Math.pow(31, n - i - 1);
+        }
+        return Math.abs(hash) % buckets.length;
+    }
+     */
+
+    @Override  // метка о том, что мы переопределяем метод интерфейса тейбл. Если вы ошиблись в имени метода или его сигнатуре (например, опечатка в названии или неверные параметры), компилятор выдаст ошибку. Без @Override метод мог бы считаться новым, а не переопределением, и ошибка осталась бы незамеченной.
+    public void put(String key, String value) {
+        int index = hash(key);
+        HashNode current = bucket[index];
+
+        if (current == null) {  // если текущая ячейка пуста
+
+        }
+    }
+
+    @Override
+    public String get(String key) {
+        return "";
+    }
+
+    @Override
+    public void remove(String key) {
+
+    }
+
+    @Override
+    public int size() {
+        return 0;
+    }
+}
