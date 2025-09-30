@@ -5,3 +5,4 @@ a = a.lower()
 print(len(a))
 print("п" in a)
 print(a.count("а"))
+
